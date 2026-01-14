@@ -36,7 +36,7 @@ const meusProjetos = [
   {
     titulo: "Calculadora de Gorjetas",
     descricao: "Aplicação simples para praticar lógica JS.",
-    techs: ["JS", "CSS"],
+    techs: ["JS"],
     link: "#",
   },
 ];

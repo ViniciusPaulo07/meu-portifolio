@@ -145,3 +145,19 @@ textarea {
 .social-links i:hover {
     color: var(--primary-color);
 }
+
+.social-links a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Suaviza o movimento */
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /*Aumenta o ícone em 20% ao passar o mouse */
+}
+
+.social-links i {
+    stroke-width: 2px; /* Deixa o traço do ícone um pouco mais grosso e visível */
+}

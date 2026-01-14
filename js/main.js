@@ -23,3 +23,37 @@ form.addEventListener("submit", function (event) {
   // Limpamos o formulário.
   form.reset();
 });
+
+lucide.createIcons();
+
+const meusProjetos = [
+    {
+        titulo: "Portifólio Pessaol",
+        descricao: "Site moderno para apresentação de projetos.",
+        techs: ["HTML", "CSS", "JS"],
+        link: "#"
+    },
+    {
+        titulo: "Calculadora de Gorjetas",
+        descricao: "Aplicação simples para praticar lógica JS.",
+        techs: ["JS", "CSS"],
+        link: "#"
+    }
+];
+
+const grid = document.querySelector('.projects-grid');
+
+// Função para criar os cards automaticamente
+meusProjetos.forEach(projetos => {
+    const card = `
+        <article class="project-card">
+            <h3>${projeto.titulo}</h3>
+            <p>${projeto.descricao}</p>
+            <div class="techs">
+                ${projeto.techs.map(t => `<span>${t}</span>`).join('')}
+            </div>
+            <a href="${projeto.link}">Ver Repositório</a>
+        </article>
+     `;
+     grid.innerHTML += card;
+});

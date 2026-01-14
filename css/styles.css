@@ -129,3 +129,19 @@ textarea {
     font-weight: bold;
     border: 1px solid var(--primary-color);
 }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 0;
+}
+
+.social-links i {
+    color: var(--text-light);
+    transition: color 0.3s;
+}
+
+.social-links i:hover {
+    color: var(--primary-color);
+}

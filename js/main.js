@@ -44,7 +44,7 @@ const meusProjetos = [
 const grid = document.querySelector(".projects-grid");
 
 // Função para criar os cards automaticamente
-meusProjetos.forEach((projetos) => {
+meusProjetos.forEach((projeto) => {
   const card = `
         <article class="project-card">
             <h3>${projeto.titulo}</h3>

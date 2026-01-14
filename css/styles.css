@@ -33,3 +33,21 @@ nav a {
     text-decoration: none; /* Remove o sublinhado dos links */
     font-weight: bold;
 }
+
+section {
+    padding: 80px 20px; /* 80px em cima/baixo, 20px nas laterais */
+    max-width: 1000px; /* Impede que o texto fique largo demais em telas gigantes */
+    margin: 0 auto; /* Centraliza a seção inteira na tela */
+    text-align: center; /* Centraliza o texto */ 
+}
+
+h1 {
+    font-size: 3rem; /* Texto bem grande para  seu nome */
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #94a3b8; /*Um cinza suave para a descrição */
+}

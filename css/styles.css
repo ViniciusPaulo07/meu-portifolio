@@ -62,7 +62,7 @@ section p {
 .project-card {
     background-color: #1e293b; /* Um tom levemente mais claro que o fundo */
     padding: 20px;
-    border-radius 8px;
+    border-radius: 8px;
     text-align: left;
     border: 1px solid #334155;
     transition: transform 0.3s ease;

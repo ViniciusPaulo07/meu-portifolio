@@ -28,7 +28,7 @@ lucide.createIcons();
 
 const meusProjetos = [
   {
-    titulo: "Portifólio Pessaol",
+    titulo: "Portfólio Pessoal",
     descricao: "Site moderno para apresentação de projetos.",
     techs: ["HTML", "CSS", "JS"],
     link: "#",

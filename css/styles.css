@@ -113,3 +113,19 @@ textarea {
 .btn-submit:hover {
   filter: brightness(1.2); /*Aumenta o brilho da cor original */
 }
+
+.techs {
+    display: flex;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.techs span {
+    background-color: rgba(37, 99, 235, 0.1); /*Azul da marca com 10% de opacidade */
+    color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid var(--primary-color);
+}

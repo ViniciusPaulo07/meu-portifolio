@@ -3,7 +3,7 @@ const form = document.getElementById("contact-form");
 
 // Ouvimos o evento de "submit" (quando o usuário clica no botão).
 form.addEventListener("submit", function (event) {
-  // 3.Impedimos o navegador de recarregar a página.
+  // Impedimos o navegador de recarregar a página.
   event.preventDefault();
 
   // Pegamos os valores dos campos.
@@ -26,34 +26,48 @@ form.addEventListener("submit", function (event) {
 
 lucide.createIcons();
 
+//Criamos um Array de Objetos. É como uma mini base de dados do seu código.
 const meusProjetos = [
   {
     titulo: "Portfólio Pessoal",
     descricao: "Site moderno para apresentação de projetos.",
     techs: ["HTML", "CSS", "JS"],
-    link: "#",
+    link: "https://github.com/ViniciusPaulo07/meu-portifolio.git",
   },
   {
-    titulo: "Calculadora de Gorjetas",
-    descricao: "Aplicação simples para praticar lógica JS.",
-    techs: ["JS"],
+    titulo: "Projeto Futuro",
+    descricao: "Em breve um novo projeto será listado aqui.",
+    techs: ["???"],
     link: "#",
   },
 ];
 
+//Selecionamos o container no HTML onde os cards vão "morar".
 const grid = document.querySelector(".projects-grid");
 
-// Função para criar os cards automaticamente
-meusProjetos.forEach((projeto) => {
-  const card = `
-        <article class="project-card">
-            <h3>${projeto.titulo}</h3>
-            <p>${projeto.descricao}</p>
-            <div class="techs">
-                ${projeto.techs.map((t) => `<span>${t}</span>`).join("")}
-            </div>
-            <a href="${projeto.link}">Ver Repositório</a>
-        </article>
-     `;
-  grid.innerHTML += card;
-});
+// Criamos uma função para desenhar os cards na tela
+function carregarProjetos() {
+  // Limpamos o conteúdo atual do HTML
+  gridProjetos.innerHTML = "";
+
+  // Para cada projeto dentro da nossa lista, fazemos o seguinte:
+  meusProjetos.forEach((projeto) => {
+    // Criamos o HTML do card usando Crases (Template Strings)
+    const cardHTML = `
+            <article class="project-card">
+                <h3>${projeto.titulo}</h3>
+                <p>${projeto.descricao}</p>
+                <div class="techs">
+                    ${projeto.techs.map((t) => `<span>${t}</span>`).join("")}
+                </div>
+                    <a href="${
+                      projeto.link
+                    }" target="_black">Ver Repositório</a>
+            </article>
+        `;
+    // Adicionamos esse card dentro da nossa div principal
+    gridProjetos.innerHTML += cardHTML;
+  });
+}
+// Chamamos a função para ela rodar assim que o site carregar
+carregarProjetos();

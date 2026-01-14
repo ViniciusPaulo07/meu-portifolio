@@ -163,7 +163,16 @@ textarea {
   transition: transform 0.3s ease; /* Suaviza o movimento */
 }
 
+.social-links a, .social-links a:visited {
+    color: var(--text-light); /* Garante que a cor seja sempre o branco/cinza claro */
+    text-decoration: none;
+    display: flex;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
 .social-links a:hover {
+  color: var(--primary-color); /* Muda para azul apenas quando passar o mouse */
+  transform: translateY(-5px); /* Efeito opcional de subir um pouco */
   transform: scale(1.2); /*Aumenta o ícone em 20% ao passar o mouse */
 }
 

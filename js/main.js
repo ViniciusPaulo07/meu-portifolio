@@ -43,7 +43,7 @@ const meusProjetos = [
 ];
 
 //Selecionamos o container no HTML onde os cards vão "morar".
-const grid = document.querySelector(".projects-grid");
+const gridProjetos = document.querySelector(".projects-grid");
 
 // Criamos uma função para desenhar os cards na tela
 function carregarProjetos() {

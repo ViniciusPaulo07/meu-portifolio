@@ -19,3 +19,17 @@ body {
     color: var(--text-light);
     line-height: 1.6;
 }
+
+nav ul {
+    display: flex; /* Transforma a lista em um lista */
+    list-style: none; /* Remove as "bolinhas" da lista */
+    gap: 20px; /* Cria um espaço entre os itens */
+    justify-content: center; /* Centraliza o menu na tela */
+    padding: 20px;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold;
+}

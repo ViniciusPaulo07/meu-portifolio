@@ -1,0 +1,21 @@
+/* Reset básico para remover margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de tema - facilite sua vida no futuro */
+:root {
+    --primary-color: #2563eb;
+    --dark-bg: #0f172a;
+    --text-light: #f8fafc;
+    --font-main: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+}

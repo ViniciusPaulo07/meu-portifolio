@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset básico para remover margens padrão do navegador */
 * {
   margin: 0;

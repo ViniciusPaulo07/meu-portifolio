@@ -1,59 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="sobre">Sobre</a></li>
-                <li><a href="projetos">Projetos</a></li>
-                <li><a href="contato">Contato</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="sobre">Sobre</a></li>
+          <li><a href="projetos">Projetos</a></li>
+          <li><a href="contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="sobre">
-            <h1>Vinicius Paulo</h1>
-            <p>"Desenvolvedor em constante aprendizado, focado em criar soluções modernas com JavaScript."</p>
-        </section>
-        <section id="projetos">
-            <h2></h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3>Projeto Portifólio</h3>
-                    <p>Este próprio site que estamos construindo agora.</p>
-                    <div class="techs">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                    <a href="#">Ver Repositório</a>
-                </article>
+      <section id="sobre">
+        <h1>Vinicius Paulo</h1>
+        <p>
+          "Desenvolvedor em constante aprendizado, focado em criar soluções
+          modernas com JavaScript."
+        </p>
+      </section>
+      <section id="projetos">
+        <h2></h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Projeto Portifólio</h3>
+            <p>Este próprio site que estamos construindo agora.</p>
+            <div class="techs">
+              <span>HTML</span>
+              <span>CSS</span>
             </div>
-        </section>
+            <a href="#">Ver Repositório</a>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
-        <section id="contato">
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso ajudar?"></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Enviar Mensagem</button>
-            </form>
-        </section>
+      <section id="contato">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              placeholder="Como posso ajudar?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        </form>
+      </section>
     </footer>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

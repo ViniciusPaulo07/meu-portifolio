@@ -38,6 +38,7 @@ O objetivo deste projeto é praticar conceitos fundamentais de desenvolvimento w
 ```bash
 meu-portifolio/
 │── .gitignore
+│── image.png 
 │── index.html
 │── README.md
 │── style.css

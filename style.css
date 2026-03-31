@@ -1,15 +1,18 @@
 :root {
-  --cor-fundo: #0e0e0e;
-  --cor-superficie: #1a1a1a;
-  --cor-borda: #2e2e2e;
-  --cor-texto: #e8e8e8;
-  --cor-texto-suave: #888888;
-  --cor-destaque: #c8f04c;
-  --fonte-titulo: "Syne", sans-serif;
+  --cor-fundo: #0b0f1a;
+  --cor-superficie: #121829;
+  --cor-borda: #1f2a44;
+  --cor-texto: #e6eaf2;
+  --cor-texto-suave: #94a3b8;
+  --cor-destaque: #3b82f6;
+
+  --fonte-titulo: "Poppins", sans-serif;
   --fonte-corpo: "DM Sans", sans-serif;
+
   --max-largura: 900px;
   --espacamento-secao: 120px;
 }
+
 *,
 *::before,
 *::after {
